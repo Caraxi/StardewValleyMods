@@ -14,7 +14,7 @@ namespace LongerLastingLures
         public override void Entry(IModHelper helper)
         {
             this.Config = Helper.ReadConfig<ModConfig>();
-            TimeEvents.AfterDayStarted += delegate { FishingRod.maxTackleUses = this.Config.DefaultMaxUses + (this.Config.IncreaseMaxUsesWithFishingLevel * Game1.player.FishingLevel); };
+            TimeEvents.AfterDayStarted += updateMaxUses;
             GameEvents.FirstUpdateTick += updateMaxUses;
             PlayerEvents.LeveledUp += updateMaxUses;
             SaveEvents.AfterLoad += updateMaxUses;
