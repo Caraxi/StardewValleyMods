@@ -1,9 +1,10 @@
 ﻿{
-  "Name": "LongerLastingLures",
+  "Name": "Longer Lasting Lures",
   "Author": "Caraxian",
   "Version": "1.0.0",
-  "Description": "",
+  "Description": "Modify the lifespan of fishing tackle.",
   "UniqueID": "caraxian.LongerLastingLures",
   "EntryDll": "LongerLastingLures.dll",
+  "MinimumApiVersion": "2.10.1",
   "UpdateKeys": [ "Nexus:2510" ]
 }

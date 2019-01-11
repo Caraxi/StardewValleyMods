@@ -1,8 +1,9 @@
 ﻿{
-  "Name": "ScrollToBlank",
+  "Name": "Scroll To Blank",
   "Author": "Caraxian",
   "Version": "1.2.0",
-  "Description": "Allow Scrolling to Blank Slots on Hotbar.",
+  "Description": "Allow scrolling to blank slots on the toolbar.",
   "UniqueID": "caraxian.scroll.to.blank",
-  "EntryDll": "ScrollToBlank.dll"
+  "EntryDll": "ScrollToBlank.dll",
+  "MinimumApiVersion": "2.10.1"
 }
