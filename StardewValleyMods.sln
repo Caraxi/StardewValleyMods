@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongerLastingLures", "Longe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaraTestSuite", "CaraTestSuite\CaraTestSuite.csproj", "{045C710F-566D-4DBC-BD7B-0BA2ABFCD467}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotReallyHostedMultiplayer", "NotReallyHostedMultiplayer\NotReallyHostedMultiplayer.csproj", "{4D2D662E-CA30-44CD-A272-0034C9768C71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{045C710F-566D-4DBC-BD7B-0BA2ABFCD467}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{045C710F-566D-4DBC-BD7B-0BA2ABFCD467}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{045C710F-566D-4DBC-BD7B-0BA2ABFCD467}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D2D662E-CA30-44CD-A272-0034C9768C71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D2D662E-CA30-44CD-A272-0034C9768C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D2D662E-CA30-44CD-A272-0034C9768C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D2D662E-CA30-44CD-A272-0034C9768C71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
