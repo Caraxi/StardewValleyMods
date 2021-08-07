@@ -9,7 +9,7 @@ namespace AutoLoadGame
 {
     class ModEntry : Mod
     {
-        private int wait = 5;
+        private int wait;
         private ModConfig Config;
 
         /// <summary>The mod entry point, called after the mod is first loaded.</summary>
@@ -17,6 +17,11 @@ namespace AutoLoadGame
         public override void Entry(IModHelper helper)
         {
             this.Config = helper.ReadConfig<ModConfig>();
+
+            wait = this.Config.TicksBeforeLoadSP;
+            if (this.Config.LoadIntoMultiplayer)
+                wait = this.Config.TicksBeforeLoadMP;
+
             if (this.Config.LastFileLoaded != null)
                 helper.Events.GameLoop.UpdateTicked += waitUntilReady;
 
@@ -54,7 +59,10 @@ namespace AutoLoadGame
                 // Need to delay so options can load correctly... 
                 if (wait <= 0)
                 {
-                    wait = 5;
+                    wait = this.Config.TicksBeforeLoadSP;
+                    if (this.Config.LoadIntoMultiplayer)
+                        wait = this.Config.TicksBeforeLoadMP;
+
                     Helper.Events.GameLoop.UpdateTicked -= waitUntilReady;
                     doLoad();
                 }
@@ -109,3 +117,4 @@ namespace AutoLoadGame
 
     }
 }
+
